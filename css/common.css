@@ -63,6 +63,11 @@ a {
 	font-weight: bold;
 }
 
+embed {
+	width: 100%;
+	height: max-content;
+}
+
 .center {
 	text-align: center;
 	margin-left: auto;
