@@ -50,10 +50,10 @@ html {
 body {
 	overflow-x: hidden !important;
 	display: block;
-	width: 96%;
+	width: 98%;
 	
 	margin: 0px auto;
-	padding: 1em;
+	padding: 1em .5em;
 
 	background-color: var(--bg-color);
 }
@@ -75,6 +75,8 @@ embed {
 	list-style-position: inside;
 }
 
+img.invert { filter: invert(1) !important; }
+
 #content {
 	display: block;
 	width: 96%;
@@ -86,26 +88,8 @@ embed {
 	margin-right: auto;
 }
 
-.nav {
-	display: block;
-	padding: 12px;
-	padding-bottom: 6px;
-}
-
-.nav a {
-	text-decoration:none;
-	font-size: 36px;
-	color: var(--text-color);
-	font-weight: bold;
-}
-
-.nav a:hover {
-	color: var(--pink-color);
-	text-decoration: underline 4px;
-}
-
 div {
-	margin: 12px;
+	margin: 6px;
 }
 
 p {
@@ -124,10 +108,10 @@ h3 a { color: var(--pink-color); }
 div.gallery > img,
 div.gallery > a > img {
 	display: inline-flexbox;
-	margin: 6px;
+	margin: 4px;
 	padding: 2px;
 
-	height: 128px;
+	height: 120px;
 	width: auto;
 
 	border: dashed;
@@ -136,9 +120,10 @@ div.gallery > a > img {
 }
 
 @keyframes credAnim {
-  0%   {background-color:var(--purp-color); transform:rotate(10deg); transform:scale(0.9);}
+  0%   {background-color:var(--purp-color); transform:scale(1.2);}
+  5%   {background-color:var(--purp-color); transform:rotate(10deg); transform:scale(0.9);}
   20%  {background-color:var(--blue-color); transform:rotate(-5deg);}
-  40%  {background-color:var(--green-color); transform:scale(1.2);}
+  45%  {background-color:var(--green-color); transform:scale(1.2);}
   60%  {background-color:var(--cyan-color); transform:rotate(5deg);}
   80%  {background-color:var(--cyan-color); transform:scale(1.2);}
   100% {background-color:var(--pink-color); transform:scale(2.0);}
@@ -147,12 +132,12 @@ div.gallery > a > img {
 div.gallery > img:hover,
 div.gallery > a > img:hover{
 	animation-name: credAnim;
-	animation-duration: 3s;
+	animation-duration: 2.5s;
 
 	/* END STATE */
 	transform:scale(2.0);
 	padding: 0;
-	margin: 8px;
+	margin: 6px;
 }
 
 /******************/
