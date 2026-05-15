@@ -116,6 +116,7 @@ div.gallery > div > a > img {
 	display: inline-flexbox;
 	flex: content;
 	flex-direction: column-reverse;
+	flex-wrap: wrap-reverse;
 	margin: 4px;
 	padding: 2px;
 
@@ -127,7 +128,7 @@ div.gallery > div > a > img {
 	image-rendering: pixelated;
 }
 
-div.mod-team > a > img { flex-flow: wrap-reverse; }
+div.mod-team > a > img { flex-wrap: wrap; }
 div.gallery > div.mod-team > a > img { height: 96px; }
 
 @keyframes credAnim {
