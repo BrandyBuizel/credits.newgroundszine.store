@@ -75,6 +75,10 @@ embed {
 	list-style-position: inside;
 }
 
+hr, .bordered, #footer {	
+	border-top: 3px dashed var(--text-color); 
+}
+
 img.invert { filter: invert(1) !important; }
 
 #content {
@@ -106,8 +110,12 @@ h3 a { color: var(--purp-color); }
 /* GALLERY SECTION */
 /*******************/
 div.gallery > img,
-div.gallery > a > img {
+div.gallery > a > img,
+div.gallery > div img,
+div.gallery > div > a > img {
 	display: inline-flexbox;
+	flex: content;
+	flex-direction: column-reverse;
 	margin: 4px;
 	padding: 2px;
 
@@ -118,6 +126,9 @@ div.gallery > a > img {
 	border-color: var(--text-color);
 	image-rendering: pixelated;
 }
+
+div.mod-team > a > img { flex-flow: wrap-reverse; }
+div.gallery > div.mod-team > a > img { height: 96px; }
 
 @keyframes credAnim {
   0%   {background-color:var(--purp-color); transform:scale(1.2);}
@@ -130,7 +141,8 @@ div.gallery > a > img {
 }
 
 div.gallery > img:hover,
-div.gallery > a > img:hover{
+div.gallery > a > img:hover,
+div.gallery > div img:hover {
 	animation-name: credAnim;
 	animation-duration: 2.5s;
 
@@ -153,7 +165,6 @@ div.gallery > a > img:hover{
 	height: 36px;
 
 	background-color: var(--bg-color);
-	border-top: 3px dashed var(--text-color);
 }
 
 #footer p {
