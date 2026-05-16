@@ -109,14 +109,16 @@ h3 a { color: var(--purp-color); }
 /*******************/
 /* GALLERY SECTION */
 /*******************/
-div.gallery > img,
+div.credits > img,
 div.gallery > a > img,
 div.gallery > div img,
 div.gallery > div > a > img {
-	display: inline-flexbox;
+	display: flexbox;
 	flex: content;
 	flex-direction: column-reverse;
 	flex-wrap: wrap-reverse;
+	justify-content: flex-end;
+
 	margin: 4px;
 	padding: 2px;
 
@@ -126,6 +128,15 @@ div.gallery > div > a > img {
 	border: dashed;
 	border-color: var(--text-color);
 	image-rendering: pixelated;
+}
+
+div.gallery > img { 
+	width: 30%;
+	height: auto;
+
+	margin: 4px;
+	padding: 2px;
+	padding-bottom: 1em;
 }
 
 div.mod-team > a > img { flex-wrap: wrap; }
@@ -141,9 +152,9 @@ div.gallery > div.mod-team > a > img { height: 96px; }
   100% {background-color:var(--pink-color); transform:scale(2.0);}
 }
 
-div.gallery > img:hover,
-div.gallery > a > img:hover,
-div.gallery > div img:hover {
+div.credits > img:hover,
+div.credits > a > img:hover,
+div.credits > div img:hover {
 	animation-name: credAnim;
 	animation-duration: 2.5s;
 
