@@ -30,7 +30,8 @@ html {
     margin-left: -32px;
 }
 
-#header > img { 
+#header > img,
+#header > a > img { 
 	width: auto;
 	height: 200px;
 }
@@ -103,8 +104,9 @@ p {
 	text-align: center;
 }
 
-p a { color: var(--pink-color); }
+p a { color: var(--purp-color); }
 h3 a { color: var(--purp-color); }
+#store { max-width: 860px; }
 
 /*******************/
 /* GALLERY SECTION */
