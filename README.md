@@ -1,4 +1,4 @@
-### [newgroundszine.store](https://newgroundszine.store) ● [credits.newgroundszine.store](https://newgroundszine.store/credits)
+### [newgroundszine.store](https://newgroundszine.store) • [credits](https://newgroundszine.store/credits/) • [ghosts](https://newgroundszine.store/ghosts/) • [music](https://newgroundszine.store/music/)
 
 hey it's me, the website code. pretty neat stuff here, steal whatever you need to code your own site ;)
 
