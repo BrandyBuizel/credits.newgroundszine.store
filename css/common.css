@@ -13,6 +13,8 @@
 	--red-color: #b44837;
 	--blue-color: #5b6ee1;
 	--green-color: #8bdf92;
+
+	--link-color: #fda238;
 }
 
 html {
@@ -62,6 +64,7 @@ body {
 a {
 	text-decoration: none;
 	font-weight: bold;
+	color: var(--link-color)
 }
 
 embed {
