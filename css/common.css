@@ -13,6 +13,8 @@
 	--red-color: #b44837;
 	--blue-color: #5b6ee1;
 	--green-color: #8bdf92;
+
+	--link-color: #fda238;
 }
 
 html {
@@ -30,7 +32,8 @@ html {
     margin-left: -32px;
 }
 
-#header > img { 
+#header > img,
+#header > a > img { 
 	width: auto;
 	height: 200px;
 }
@@ -61,6 +64,7 @@ body {
 a {
 	text-decoration: none;
 	font-weight: bold;
+	color: var(--link-color)
 }
 
 embed {
@@ -103,20 +107,23 @@ p {
 	text-align: center;
 }
 
-p a { color: var(--pink-color); }
+p a { color: var(--purp-color); }
 h3 a { color: var(--purp-color); }
+#store { max-width: 860px; }
 
 /*******************/
 /* GALLERY SECTION */
 /*******************/
-div.gallery > img,
+div.credits > img,
 div.gallery > a > img,
 div.gallery > div img,
 div.gallery > div > a > img {
-	display: inline-flexbox;
+	display: flexbox;
 	flex: content;
 	flex-direction: column-reverse;
 	flex-wrap: wrap-reverse;
+	justify-content: flex-end;
+
 	margin: 4px;
 	padding: 2px;
 
@@ -126,6 +133,15 @@ div.gallery > div > a > img {
 	border: dashed;
 	border-color: var(--text-color);
 	image-rendering: pixelated;
+}
+
+div.gallery > img { 
+	width: 30%;
+	height: auto;
+
+	margin: 4px;
+	padding: 2px;
+	padding-bottom: 1em;
 }
 
 div.mod-team > a > img { flex-wrap: wrap; }
@@ -141,9 +157,9 @@ div.gallery > div.mod-team > a > img { height: 96px; }
   100% {background-color:var(--pink-color); transform:scale(2.0);}
 }
 
-div.gallery > img:hover,
-div.gallery > a > img:hover,
-div.gallery > div img:hover {
+div.credits > img:hover,
+div.credits > a > img:hover,
+div.credits > div img:hover {
 	animation-name: credAnim;
 	animation-duration: 2.5s;
 
@@ -162,7 +178,7 @@ div.gallery > div img:hover {
 
 	width: 100%;
 	padding-top: 12px;
-	padding-bottom: 32px;
+	padding-bottom: 1em;
 	height: 36px;
 
 	background-color: var(--bg-color);
@@ -174,14 +190,13 @@ div.gallery > div img:hover {
 	text-align: center;
 	color: var(--text-color);
 
-	margin-top: 6px;
-	margin-bottom: 0px;
-	padding: 0px;
+	margin-top: -1em;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 #footer > h3 { 
 	margin-top: 6px;
-	padding-bottom: 1em;
 }
 
 #footer img {
